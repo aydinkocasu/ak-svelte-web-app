@@ -2,6 +2,7 @@
   import Router from "svelte-spa-router";
   import routes from "./router";
   import { authUserStore } from "./stores/userStore";
+  import { onMount } from "svelte";
 
   let isLoggedIn = false;
 
@@ -40,6 +41,10 @@
       window.location.hash = "#/";
     }
   }
+
+  onMount(() => {
+    ensureHashRouting();
+  });
 
   window.addEventListener("popstate", ensureHashRouting);
   window.addEventListener("hashchange", checkLoginStatus);
