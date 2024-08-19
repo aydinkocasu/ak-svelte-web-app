@@ -22,15 +22,15 @@ To run this project locally, follow these steps:
    git clone https://github.com/aydinkocasu/ak-svelte-web-app.git
    cd ak-svelte-web-app
 
-2. **Install dependencies:**
+2. **Install dependencies::**
 
-  ```bash
-  npm install
+   ```bash
+    npm install
 
 3. **Run the development server:**
 
-```bash
-npm run dev
+   ```bash
+   npm run dev
 
 Open the app in your browser:
 
