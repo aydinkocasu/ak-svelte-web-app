@@ -36,11 +36,11 @@ Open the app in your browser:
 
 Visit http://localhost:5173 to see the app in action.
 
-Usage
-Sign Up: Navigate to the sign-up page, enter your Telegram ID and password, and receive an authorization token.
-Log In: Use your Telegram ID and password to log in.
-Validate Token: Enter your authorization token to validate it and complete the login process
-Profile: Navigate to profile page
+## Usage
+- **Sign-Up:** Navigate to the sign-up page, enter your Telegram ID and password, and receive an authorization token.
+- **Login:** Use your Telegram ID and password to log in.
+- **Validate Token:**  Enter your authorization token to validate it and complete the login process
+- **Profile:** Navigate to profile page
 
 Project Structure
 
