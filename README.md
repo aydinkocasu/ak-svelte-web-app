@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-[Check out the live demo here](https://ak-svelte-app-static-ysarj.ondigitalocean.app/#/)
+<a href="https://ak-svelte-app-static-ysarj.ondigitalocean.app/#/" target="_blank">Check out the live demo here</a>
 
 ## Description
 
