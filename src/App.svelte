@@ -13,7 +13,6 @@
       const queryString = hash.split("?")[1];
       const hashParams = new URLSearchParams(queryString);
       const name = hashParams.get("name") || "";
-      console.log(name || "not found");
       if (name) {
         authUserStore.setUserName(name);
       }
