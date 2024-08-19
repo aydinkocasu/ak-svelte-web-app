@@ -1,5 +1,9 @@
 # Svelte Authentication Demo
 
+## Live Demo
+
+[Check out the live demo here](https://ak-svelte-app-static-ysarj.ondigitalocean.app/#/)
+
 ## Description
 
 This project is a simple authentication demo built with Svelte. It demonstrates basic user authentication flows, including sign-up, login, and token validation. The app is designed to showcase Svelte's capabilities in managing state, handling forms, and implementing routing.
