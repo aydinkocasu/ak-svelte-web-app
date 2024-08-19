@@ -43,6 +43,8 @@ Validate Token: Enter your authorization token to validate it and complete the l
 Profile: Navigate to profile page
 
 Project Structure
+
+   ```bash
 .
 ├── index.html
 ├── LICENSE
