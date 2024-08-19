@@ -11,6 +11,7 @@ function createAuthUserStore() {
   const userStore = writable<User | null>(null)
   const isLoggedIn = writable<boolean>(false)
   const isSignedUp = writable<boolean>(false)
+  const userName = writable<string>("");
 
   return {
     subscribe: userStore.subscribe,
@@ -26,8 +27,12 @@ function createAuthUserStore() {
       isLoggedIn.set(false)
     },
     resetSignUp: () => { isSignedUp.set(false) },
+    setUserName: (name: string) => {
+      userName.set(name);
+    },
     isLoggedIn,
-    isSignedUp
+    isSignedUp,
+    userName
   };
 };
 

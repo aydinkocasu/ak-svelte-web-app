@@ -3,7 +3,10 @@
   import { authUserStore } from "../stores/userStore";
 
   let isLoggedIn = false;
+  let userName = "";
+
   $: authUserStore.isLoggedIn.subscribe((value) => (isLoggedIn = value));
+  $: authUserStore.userName.subscribe((value) => (userName = value));
 
   function logOut() {
     authUserStore.logout();
@@ -47,12 +50,12 @@
     </div>
     {#if !isLoggedIn}
       <div class="inner-area">
-        <div class="title">Hi, Welcome to the app 👋</div>
+        <div class="title">Hi {userName}, Welcome to the app 👋</div>
         <div class="p">You can sign up, log In then check your profile</div>
       </div>
     {:else}
       <div class="inner-area">
-        <div class="title">Hi, Welcome Back Again!</div>
+        <div class="title">Hi {userName}, Welcome Back Again!</div>
         <div class="p">You access your profile</div>
       </div>
     {/if}
