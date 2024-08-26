@@ -16,14 +16,13 @@ function createAuthUserStore() {
   return {
     subscribe: userStore.subscribe,
     signUp: (user: User) => {
-      userStore.set(user),
-        isSignedUp.set(true)
+      userStore.set(user)
+      isSignedUp.set(true)
     },
     login: () => {
       isLoggedIn.set(true)
     },
     logout: () => {
-      userStore.set(null)
       isLoggedIn.set(false)
     },
     resetSignUp: () => { isSignedUp.set(false) },
