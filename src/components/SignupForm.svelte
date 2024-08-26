@@ -6,13 +6,7 @@
   let password = "";
   let token = "";
 
-  let user = null;
-
   let validationErrors: { field: string; message: string }[] = [];
-
-  $: authUserStore.subscribe((value: User | null) => {
-    user = value;
-  });
 
   const validateInputs = () => {
     validationErrors = []; // Clear previous validation errors
@@ -51,9 +45,9 @@
       };
 
       authUserStore.signUp(user as User);
-      alert(
-        `Your authorization token is: ${token}. Please save it somewhere safe`,
-      );
+      // alert(
+      //   `Your authorization token is: ${token}. Please save it somewhere safe`,
+      // );
     } else {
       console.log("Validation Errors");
     }
